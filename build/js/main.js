@@ -8,6 +8,8 @@ const initApp=()=>{
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
 
+        
+
     }
 
     hamBurgerBtn.addEventListener('click', toggleMenu)
