@@ -918,22 +918,17 @@ video {
   transition-duration: 500ms;
 }
 
-.toggle-btn>div::after {
-  --tw-translate-y: 0px;
-  --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.toggle-btn::before {
+  transform: translateY(0) rotate(-45deg);
 }
 
-.toggle-btn>div::before {
-  --tw-translate-y: 0px;
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.toggle-btn::after {
+  transform: translateY(0) rotate(45deg);
 }
 
-.toggle-btn>div {
-  --tw-rotate: 72odeg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.toggle-btn > div {
   background-color: transparent;
+  transform: rotate(720deg);
 }
 
 .before\:absolute::before {
@@ -1226,14 +1221,14 @@ video {
 }
 
 @media (min-aspect-ratio:9/2) {
-  .widescreen\:section-min-height{
-    min-height:calc(100vh - 68px)
+  .widescreen\:section-min-height {
+    min-height: calc(100vh - 68px);
   }
 }
 
-@media (min-aspect-ratio:13/20) {
-  .tallscreen\:section-min-height{
-    min-height:calc(100vh - 68px)
+@media (max-aspect-ratio:13/20) {
+  .tallscreen\:section-min-height {
+    min-height: calc(100vh - 68px);
   }
 }
 
