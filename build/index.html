@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme Rockets</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -19,7 +20,7 @@
                 <div>
                     <button id="hamburger-button"
                     class="text-3xl md:hidden focus:outline-none cursor-pointer relative w-8 h-8 ">
-<div class="bg-white h-1 w-8 absolute rounded top-4  -mt-0.5  before:content-[''] before:bg-white before:absolute before:rounded before:w-8 before:h-1 before:transition-all duration-500 before:-translate-x-4 before:-translate-y-3  duration:500 after:content-[''] after:bg-white after:absolute after:rounded after:w-8 after:h-1 after:transition-all  after:duration-500 after:-translate-x-4 after:translate-y-3">
+                <div class="bg-white h-1 w-8 absolute rounded top-4  -mt-0.5  before:content-[''] before:bg-white before:absolute before:rounded before:w-8 before:h-1 before:transition-all duration-500 before:-translate-x-4 before:-translate-y-3  duration:500 after:content-[''] after:bg-white after:absolute after:rounded after:w-8 after:h-1 after:transition-all  after:duration-500 after:-translate-x-4 after:translate-y-3">
 
 
 
@@ -32,25 +33,24 @@
                 </nav>
                 </div>
             </section>
-
-<section id="mobile-menu" class="menu-mobile absolute top-68 bg-black w-full text-5xl flex flex-col justify-content-center origin-top animate-open-menu hidden">
-    <button class="text-8xl self-end px-6 ">
-    </button>
+<!-- 
+<section id="mobile-menu" class="menu-mobile absolute top-68 bg-black w-full text-5xl flex flex-col justify-content-center origin-top animate-open-menu ">
+    
     <nav class="flex flex-col min-h-screen items-center py-8 " aria-label="mobile">
-        <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+        <a href="#hero" class="w-full text-center py-6 hover:opacity-100">Home</a>
         <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rocket</a>
         <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
         <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
         <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
 
     </nav>
-</section>                
+</section>                 -->
             </section>
 
         </header>
-        <main class="max-w-4xl mx-auto " data-aos="fade-right">
+        <main class="max-w-4xl mx-auto " >
 
-            <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <section  id="hero" class="flex flex-col-reverse justify-center sm:flex-row  px-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
 <article class="sm:w-1/2 mt-7">
     <h2 class="max-w-mb  text-4xl font-bold text-center sm:text-5sl  sm:text-left text-slate-900 dark:text-white ">
         We Boldly Go <span class="text-indigo-300">Where  No Other Rocket  </span>    Has Gone Before....
@@ -65,7 +65,8 @@ Think Acme Rockets
 <img class="w-1/2 mt-10" src="img/rocketdab.png" alt="rocketdab">
             </section>
             <hr class="mx-auto bg-black dark:bg-white w-1/2"/>
-            <section id="rockets" class="p-6 my-12 scroll-mt-30  widescreen:section-min-height tallscreen:section-min-height" data-aos="fade-left"">
+
+            <section id="rockets" class="p-6 my-12 scroll-mt-30  widescreen:section-min-height tallscreen:section-min-height" >
                 <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                     Rockets
 
@@ -73,7 +74,7 @@ Think Acme Rockets
 
                 <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
 
-<li class=" w-1/2 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white  dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+<li class=" w-1/2 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white  dark:bg-black py-6 px-2 rounded-3xl shadow-x">
 <img src="img/rocketman.png" class="w-1/2 mb-6" alt="Explorer"/>
 <h3 class="text-3xl text-center text-slate-900 dark:text-white">Explorer</h3>
 <p class="hidden sm:block text-3xl mt-2 text-center text-slate-900 dark:text-slate-400">$</p>
@@ -97,7 +98,7 @@ Think Acme Rockets
             </section>
             <hr class="mx-auto bg-black dark:bg-white w-1/2"/>
 
-            <section id="testimonials" class="p-6 my-12 scrool-mt-20 widescreen:section-min-height tallscreen:section-min-height"">
+            <section id="testimonials" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"">
                 <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                     Our testimonials
                 </h2>
